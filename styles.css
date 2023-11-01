@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    overflow: hidden;
+    perspective: 500px;
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .8s;
+    background-color: rgb(224, 220, 220);
+}
+
+.nav{
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+}
+
+#background i{
+    cursor: pointer;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.heading h1{
+    font-size: 2.8rem;
+}
+
+#elements{
+    width: 100%;
+    margin-top: 10vh;
+    padding: 0 23px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#elements .element{
+    width: 18%;
+    height: 48vh;
+    border-radius: 10px;
+    padding: 5px;
+    background-color:rgba(144, 203, 183, 0.544);
+}
+
+.element .pic{
+    width: 100%;
+    height: 68%;
+    border-radius: 10px;
+    background-size:cover;
+    background-position: center;
+}
+
+.element .pic img{
+    width: 100%;
+    height: 100%
+}
+
+.element .content {
+    padding: 5px;  
+    margin: .5rem; 
+    overflow: hidden;
+}
+
+.element .content h3{
+    margin-top: .3rem; 
+    font-size:small;
+    color: #777777;
+}
+
+.element .content span{
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.element .content span i{
+    margin-left: 5px;
+}
+
+.element .content span:hover{
+    cursor: pointer;
+    color: #7e7e7e;
+
+}
+
+#sidenav{
+    width: 210px;
+    height: 80%;
+    top: 50%;
+    left: -15vw;
+    transform: translate(0, -50%);
+    transition: all ease-in-out .5s;
+    position: absolute;
+}
+
+#sidenav i{
+    position: absolute;
+    top: 34px;
+    right: 5px;
+    color: #7e7e7e;
+}
+
+#sidenav i:hover{
+    cursor: pointer;
+    color: black;
+}
+
+#sidenav h3{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#sidenav a{
+display: block;
+align-items: center;
+text-decoration: none;
+list-style: none;
+color: #777;
+left: 5px;
+padding-top: 20px;
+}
+
+#sidenav a:hover{
+    color: black;
+    list-style: none;
+}
+
+/* media queries */
+
